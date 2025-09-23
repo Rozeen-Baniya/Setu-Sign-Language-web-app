@@ -1,0 +1,354 @@
+/* Home Page Specific Styles */
+
+/* Hero Section */
+.hero {
+    background: #F9FAFB;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    /* Add this if not present, or adjust existing padding/margin */
+    padding: 0; /* Removes any default padding that might affect spacing */
+    margin: 0; /* Removes any default margin */
+}
+
+.hero-graphic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.3cm; /* Added to set distance above the image */
+    margin-bottom: 0.3cm; /* Set to 0.3cm to match the distance below */
+    position: relative;
+} 
+
+.hero-graphic::before {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px; /* Adjusted to match larger icon size, reducing effective gaps up and down */
+    background: #F9FAFB;
+    border-radius: 60px;
+    z-index: -1;
+}
+
+.hero-icon {
+    max-width: 100%; /* Prevents the image from exceeding container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any default inline spacing */
+}
+
+.hero-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2C5282;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #45578B;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #1D3C6A;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-large {
+    display: inline-block;
+    background: #2C5282;
+    color: white;
+    padding: 0.8rem 2rem; /* Reduced vertical padding for shorter height */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.btn-arrow .arrow {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    color: #1D3C6A;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .btn-large {
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+/* Features Section */
+.features {
+    background: #45578B; /* Changed to match Figma dark blue background */
+    position: relative;
+    padding: 4rem 0; /* Added padding for section spacing */
+    color: #fff; /* Set text color to white for visibility */
+}
+
+.features h2 { /* Added styling for the "Why Choose Setu" title to ensure it appears */
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff; /* White text to contrast with dark background */
+    z-index: 3; /* Ensure it's above any potential overlays */
+}
+
+/* Removed .features::before as it's not needed to match Figma; cards are directly on blue background */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto; /* Centered the grid */
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 2.5rem;
+    text-align: left; /* Adjusted to match Figma alignment */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2; /* Ensure cards are above background */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-card h3 {
+    color: #45578B;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.feature-card p {
+    color: #0056B3;
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq {
+    background: #F7FAFC;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item h2 {
+    color: #1D3C6A;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.faq-item h3 {
+    color: #45578B;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.faq-item p {
+    color: #45578B;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Responsive Design for Home Page */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0;
+    }
+    
+    .hero-graphic::before {
+        width: 150px;
+        height: 90px;
+    }
+    
+    .hero-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    .hero-text {
+        font-size: 2.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .features {
+        padding: 3rem 0; /* Adjusted padding for smaller screens */
+    }
+    
+    .features h2 {
+        font-size: 1.8rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 2rem;
+    }
+    
+    .faq-item {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .hero-graphic {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .hero-graphic::before {
+        width: 120px;
+        height: 70px;
+    }
+    
+    .hero-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .hero-text {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
+    
+    .features {
+        padding: 2rem 0;
+    }
+    
+    .features h2 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .faq-item {
+        padding: 1rem;
+    }
+}
+
+/* Header Media Query Adjustments */
+@media (max-width: 768px) {
+    .header-shell {
+        padding: 0.8rem;
+        border-radius: 20px;
+    }
+
+    .nav-container {
+        flex-direction: column; /* Changed to column to stack items vertically */
+        align-items: center;
+        gap: 1rem; /* Added gap between stacked items */
+    }
+
+    .nav-links {
+        flex-direction: row; /* Keep links horizontal, but can change to column if needed */
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .login-btn {
+        padding: 0.3rem 1rem;
+        font-size: 0.9rem;
+        height: 30px;
+    }
+}

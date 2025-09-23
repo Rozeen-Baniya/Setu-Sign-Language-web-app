@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Test</title>
+</head>
+<body>
+    <div class="output-placeholder">
+        <p>Test output panel</p>
+    </div>
+    
+    <button onclick="testUpdate()">Test Update</button>
+    
+    <script>
+        function testUpdate() {
+            const outputPanel = document.querySelector('.output-placeholder p');
+            if (outputPanel) {
+                outputPanel.innerHTML = '✅ Frontend display working!';
+                console.log('Update successful');
+            } else {
+                console.error('Panel not found');
+            }
+        }
+        
+        // Test on load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Test page loaded');
+            const outputPanel = document.querySelector('.output-placeholder p');
+            if (outputPanel) {
+                console.log('✅ Output panel found');
+                outputPanel.textContent = 'Panel accessible - ready for testing';
+            } else {
+                console.error('❌ Output panel not found');
+            }
+        });
+    </script>
+</body>
+</html>

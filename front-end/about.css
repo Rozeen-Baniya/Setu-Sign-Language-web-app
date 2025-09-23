@@ -1,0 +1,414 @@
+/* About Page Specific Styles */
+
+/* About Setu Section */
+.about-section {
+  padding: 4rem 0;
+  background: #f9fafb;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h1 {
+  font-size: 2.5rem;
+  color: #1D3C6A;
+  margin-bottom: 0.5rem;
+}
+
+.section-title p {
+  font-size: 1.1rem;
+  color: #45578B;
+}
+
+/* Mission Section */
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mission-card {
+  flex: 0 0 600px;
+  padding: 2rem 4rem; /* Increased horizontal padding */
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mission-card h2 {
+  font-size: 1.8rem;
+  color: #2c5282;
+  margin-bottom: 1rem;
+}
+
+.underline {
+  height: 3px;
+  width: 50px;
+  background: #45578B;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card p {
+  font-size: 1rem;
+  color: #45578B;
+  line-height: 1.6;
+}
+
+.mission-image {
+  flex: 0 0 200px; /* Fixed width to match Figma image size */
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Our Team Section */
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-row .team-card {
+  flex: 1 1 45%;
+  min-width: 260px;
+  max-width: 350px;
+}
+@media (max-width: 900px) {
+  .team-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+.team-section {
+  background: #f9fafb;
+}
+
+.team-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.team-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  background: #2c5282;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.role {
+  color: #0056B3;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.description {
+  color: #1D3C6A;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-link.linkedin {
+  background: #2c5282;
+  color: white;
+}
+
+.social-link.github {
+  background: #2c5282;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Contact Us Section */
+.contact-section {
+  background: #ffffff;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.contact-info h3 {
+  color: #1D3C6A;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.contact-info p {
+  color: #0056B3;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item label {
+  display: block;
+  color: #1D3C6A;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact-item span {
+  color: #0056B3;
+  font-size: 1rem;
+}
+
+.contact-item a {
+  color: #0056B3;
+  text-decoration: none;
+}
+
+.social-links-contact {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  color: #0056B3;
+}
+
+.social-links-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0056B3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links-contact a:hover {
+  color: #1a365d;
+}
+
+.social-links-contact a {
+  color: #0056B3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links-contact a:hover {
+  color: #1a365d;
+}
+
+/* Contact Form */
+.contact-form {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #4a5568;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  background: #f7fafc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2c5282;
+  background: white;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mission-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-card {
+    flex: 0 0 100%;
+    padding: 1.5rem;
+  }
+
+  .mission-image {
+    flex: 0 0 150px;
+  }
+
+  .mission-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-card {
+    padding: 1rem;
+  }
+
+  .team-card {
+    padding: 1rem;
+  }
+
+  .social-links {
+    gap: 0.5rem;
+  }
+
+  .social-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+}

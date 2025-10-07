@@ -11,8 +11,6 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.68+-green.svg)](https://fastapi.tiangolo.com)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-red.svg)](https://pytorch.org)
 
-[🌐 Live Demo](#) • [📖 Documentation](#) • [🤝 Contributing](#contributing) • [📧 Contact](#contact)
-
 </div>
 
 ## 🌟 Overview
